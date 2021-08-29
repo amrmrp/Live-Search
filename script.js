@@ -10,15 +10,13 @@ $(document).ready(function(){
                     if((value.name.search(myexp) !=-1)||
                     (value.bio.search(myexp) !=-1)
                     ){
-
-                   
+                     output +='<div class="w3-half">';
                     output += '<li>';
                     output += '<h2>' + value.name +'</h2>';
-                    output += '<img src="images/' +value.shortname +'_tn.jpg" alt="'+value.name +'"/>';
+                    output += '<img src="images/' +value.shortname +'_tn.jpg" alt="'+value.name +'" style="width:100%"/>';
                     output +='<p>'+value.bio+'</p>';
                     output +='</li>';
-
-
+                    output +='</div>';
                 }
                 });
                 output+='</ul>';
